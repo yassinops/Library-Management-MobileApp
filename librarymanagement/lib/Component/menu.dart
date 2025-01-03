@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:librarymanagement/Lists/authors.dart';
 import 'package:librarymanagement/Lists/books.dart';
+import 'package:librarymanagement/Manage/Crud/add_author.dart';
+import 'package:librarymanagement/Manage/Crud/add_book.dart';
 
 class Menu extends StatefulWidget {
   const Menu({super.key});
@@ -49,7 +51,7 @@ class _MenuState extends State<Menu> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Books()),
+                MaterialPageRoute(builder: (context) =>  const Books()),
               );
             },
           ),
@@ -67,26 +69,6 @@ class _MenuState extends State<Menu> {
                 MaterialPageRoute(builder: (context) => const Authors()),
               );
             },
-          ),
-          ListTile(
-            title: const Text(
-              "Manage Books",
-              style: TextStyle(
-                color: Colors.black,
-              ),
-            ),
-            leading: const Icon(Icons.edit_document, color: Colors.black),
-            onTap: () {},
-          ),
-          ListTile(
-            title: const Text(
-              "Manage Authors",
-              style: TextStyle(
-                color: Colors.black,
-              ),
-            ),
-            leading: const Icon(Icons.edit_note_outlined, color: Colors.black),
-            onTap: () {},
           ),
           ListTile(
             title: const Text(

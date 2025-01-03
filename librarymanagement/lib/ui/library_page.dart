@@ -14,7 +14,7 @@ class _LibraryPageState extends State<LibraryPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text(
+        title: const Text(
           "MyLibrary",
           style: TextStyle(color: Colors.white, fontSize: 24),
         ),
